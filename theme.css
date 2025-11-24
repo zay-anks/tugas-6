@@ -1,0 +1,113 @@
+html,body {
+    font-family: "Inter", Arial;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation img{
+    width: 48px;
+    height: 48px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 45px;
+    transition: all 0.3s ease; 
+}
+.navigation a:hover{
+    color: black;
+}
+
+.button {
+    background-color: #5B20C7;
+    color: white;
+    border-radius: 8px;
+    padding: 4px 24px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    position: relative;
+}
+
+.teks{
+    max-width: 500px;
+    background-image: url("/foto/img-pattern.svg");
+}
+
+.enjoy{
+    color: #5B20C7;
+}
+
+button{
+    background-color: #5B20C7;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    color: #5B20C7;
+    background-color: white;
+}
+
+.gbr-kanan {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+}
+
+.img-kanan {
+  position: relative;
+  max-width: 450px;
+  margin-right: 50px;
+  background-image: url(/foto/img-pattern2.svg);
+}
+.img-kiri {
+  position: absolute;
+  max-width: 450px;
+  margin-left: 50px;
+}
+@media (max-width: 640px) {
+    .navigation {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 32px 16px;
+        text-align: center;
+    }
+
+    .judul {
+        max-width: 100%;
+    }
+
+    .gambar {
+        max-width: 80%;
+        margin-top: 24px;
+    }
+}
